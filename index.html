@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>CodePlayer</title>
+    <link rel="icon" type="img/jpg" href="images/cplogo.jpg" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+<div id="container">
+<div id="menubar">
+<div id="logo">CodePlayer</div>
+<button id="run">Run</button>
+<ul id="togglebar">
+    <li class="toggle selected borderRight">HTML</li>
+    <li class="toggle borderRight">CSS</li>
+    <li class="toggle borderRight">JS</li>
+    <li class="toggle selected">Result</li>
+</ul>
+</div>
+<div class="clearer"></div>
+<div class="codeContainer" id="HTMLcontainer">
+<div class="codeLabel">HTML</div>
+<textarea id="htmlCode">
+&lt;html&gt;
+    &lt;head&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div id="text"&gt;Hello World!&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+</div>
+<div class="codeContainer" id="CSScontainer">
+<div class="codeLabel">CSS</div>
+<textarea id="cssCode">#text {color:#4CAF50}</textarea>
+</div>
+<div class="codeContainer" id="JScontainer">
+<div class="codeLabel">JS</div>
+<textarea id="jsCode">
+document.getElementById("text").innerHTML="Goodbye!"
+//JS is disabled intentionally</textarea>
+</div>
+<div class="codeContainer" id="Resultcontainer">
+<div class="codeLabel">Result</div>
+<iframe id="resultFrame"></iframe>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="codeplayerscript.js"></script>
+</body>
+</html>
