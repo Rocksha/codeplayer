@@ -2,9 +2,12 @@ body {
     align-items: center;
     margin:0;
     padding:0;
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight:300;
-   color:white;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight:300;
+    color:white;
+}
+textarea{
+    resize:none;
 }
 
 #menubar{
@@ -39,24 +42,26 @@ button {
 #togglebar {
     margin:0 auto;
     padding:0;
-    width:270.5px;
+    width:295px;
     background-color:white;
     color:#555555;
     border:1px solid grey;
     height:46.5px;
     position:relative;
+    left:-1.0px;
     top:26px;
     z-index:2;
+    text-align:center;
 
 }
 #togglebar li{
     list-style: none;
     float:left;
     padding:11.5px;
-    font-weight:bold;
     font-size:1.2em;
     position:relative;
     z-index:3;
+    width:50px;
 }
 .borderRight {
     border-right:1px solid grey;
